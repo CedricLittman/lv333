@@ -227,7 +227,7 @@ hr {
 
 /* footer */
 
-footer{
+footer {
     height: 150px;
 }
 
@@ -235,11 +235,11 @@ footer{
     text-align: center;
 }
 
-.social-networks > li {
+.social-networks>li {
     display: inline;
 }
 
-.social-networks > li {
+.social-networks>li {
     font-size: 160%;
     margin: 1%;
     padding: 5%;
@@ -249,14 +249,14 @@ footer{
 /* Gallery */
 
 #photos {
-    clear:both;
+    clear: both;
     line-height: 0;
     column-count: 4;
     column-gap: 0;
 }
 
-#photos > img {
-    width:100%;
+#photos>img {
+    width: 100%;
 }
 
 /* From larger to medium screen size from 1200px and down */
@@ -273,7 +273,8 @@ footer{
         margin: 0;
     }
 
-    #left-about, #right-about {
+    #left-about,
+    #right-about {
         width: 100%;
         float: left;
         padding: 0;
@@ -286,21 +287,21 @@ footer{
         padding: 0;
     }
 
-    #times > div {
+    #times>div {
         width: 100%;
         clear: both;
         height: 150px;
         padding: 0;
     }
 
-    hr{
+    hr {
         display: none;
     }
 }
 
 /* For medium screen sizes 950px and down */
 
- @media screen and (max-width: 950px) {
+@media screen and (max-width: 950px) {
 
     #menu {
         clear: left;
@@ -319,17 +320,30 @@ footer{
         margin: 0 auto;
     }
 
-    .left-about-heading, .right-about-heading {
+    .left-about-heading,
+    .right-about-heading {
         width: inherit;
     }
 
-    .left-about-heading h2, .right-about-heading h2 {
+    .left-about-heading h2,
+    .right-about-heading h2 {
         width: 100%;
         text-align: center;
     }
 
-    .left-about-heading p, .right-about-heading p {
+    .left-about-heading p,
+    .right-about-heading p {
         text-align: center;
         padding: 0 20px;
     }
-} 
+
+    #photos {
+        column-count: 3;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #photos {
+        column-count: 2;
+    }
+}
